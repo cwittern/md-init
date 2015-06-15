@@ -12,8 +12,10 @@ git clone git@github.com:cwittern/md-init.git
 #+END_SRC
   Now add the following lines to the file =~/.emacs.d/init.el=
 #+BEGIN_SRC 
-(setq mandoku-base-dir (expand-file-name "~/krp"))
-(load "md-init/md-init.el")
+(setq mandoku-base-dir (expand-file-name "~/krp/"))
+(load (expand-file-name "~/.emacs.d/md-init/md-init.el"))
+(require 'mandoku)
+(mandoku-initialize)
 #+END_SRC
   You might want to restart emacs or evaluate the lines manually.
   

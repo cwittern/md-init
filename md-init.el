@@ -16,7 +16,7 @@
 (unless (file-exists-p starter-kit-user-dir)
   (make-directory starter-kit-user-dir))
 
-(defvar starter-kit-lisp (expand-file-name "md" starter-kit-dir)
+(defvar starter-kit-lisp (expand-file-name "md-init" starter-kit-dir)
   "directory for starter-kit lisp code")
 
 
