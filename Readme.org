@@ -1,0 +1,21 @@
+#+TITLE: Mandoku Starter Kit
+
+* Overview
+
+  This repository contains the minimal setup to get started with
+  =mandoku= (see http://www.mandoku.org). 
+
+  To use the repository, clone it into your .emacs.d directory:
+#+BEGIN_SRC 
+cd ~/.emacs.d
+git clone git@github.com:cwittern/md-init.git
+#+END_SRC
+  Now add the following lines to the file =~/.emacs.d/init.el=
+#+BEGIN_SRC 
+(setq mandoku-base-dir (expand-file-name "~/krp"))
+(load "md-init/md-init.el")
+#+END_SRC
+  You might want to restart emacs or evaluate the lines manually.
+  
+  Upon the first start, =mandoku= and the metadata packages
+  =mandoku-meta-kr= and =mandoku-meta-zb= will be installed.
